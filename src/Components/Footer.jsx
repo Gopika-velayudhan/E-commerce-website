@@ -36,12 +36,7 @@ export const Footer = ()=>{
                 <p>
                   <span style={{ textDecoration: "none",color:'white' }}>Cat Food</span>
                 </p>
-                <p>
-                  <span style={{ textDecoration: "none",color:'white' }}>Cat Toys</span>
-                </p>
-                <p>
-                  <span style={{ textDecoration: "none",color:'white' }}>Dog Toys</span>
-                </p>
+              
               </div>
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h5 className="text-uppercase mb-4 font-weight-bold text-white">
@@ -67,17 +62,17 @@ export const Footer = ()=>{
                   Contact
                 </h5>
                 <p className="text-white">
-                  <AiFillInstagram />
+                  <AiFillInstagram />  <BsFacebook /> <BsFacebook /> <FaXTwitter />
+                </p>
+                {/* <p className="text-white">
+                  <BsFacebook />
                 </p>
                 <p className="text-white">
                   <BsFacebook />
                 </p>
                 <p className="text-white">
-                  <BiLogoGmail />
-                </p>
-                <p className="text-white">
                   <FaXTwitter />
-                </p>
+                </p> */}
               </div>
             </div>
             <hr className="mb-4"></hr>
