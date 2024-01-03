@@ -106,9 +106,9 @@ const Cart1 = () => {
                                 </MDBCol>
                                 <MDBCol md='12' lg='6' xl='8'>
                                     <p className='lead fw-normal mb-2'>{item.title}</p>
-                                    <p>
-                                        <span className='text-muted'>{item.details}</span>
-                                    </p>
+                                    
+                                    
+                                    
                                     <p className='text-dark bold'>{item.price}</p>
 
                                 </MDBCol>

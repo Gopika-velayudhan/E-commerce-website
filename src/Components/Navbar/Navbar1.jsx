@@ -53,7 +53,10 @@ function Navbar1() {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
        <img src={Logo3} alt='Logo' className='logo'></img>
-        <Navbar.Brand href="/">Happy Tails</Navbar.Brand>
+        <Navbar.Brand href="/" >
+        <span style={{ fontSize: '2rem', fontWeight: 'bold', color:"goldenrod",  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',fontFamily: 'cursive' }}>Happy</span>
+              <span style={{ fontSize: '2rem', fontWeight: 'bold', color: 'black', fontFamily: 'cursive'}}>Tails</span>
+        </Navbar.Brand>
         
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="">

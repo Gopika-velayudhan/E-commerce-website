@@ -57,7 +57,7 @@ const Viewproducts = () => {
                
                 <Card.Title>{item.title}</Card.Title>
                 <h3 className='text-warning'>Rs {item.price}</h3>
-                <h5 className='text-danger'>{item.details}</h5>
+                
 
                 {btn ? (
                   <Button className='bg-success' variant='primary' onClick={addCart}>
