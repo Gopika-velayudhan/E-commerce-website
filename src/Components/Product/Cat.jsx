@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Data } from '../MainRouter';
 import { useNavigate } from 'react-router-dom';
 import { Card,Button,Row,Col } from 'react-bootstrap';
-import Navbar1 from '../Navbar/Navbar1';
+import Navbar1 from '../Navbar/Navbar2';
 
 
 
@@ -14,6 +14,7 @@ const Cat = () => {
     const Animal = product.filter((item)=> item.Animal === 'Cat');
   return (
             <>
+            <Navbar1/>
             <Row className='m-4'>
             {Animal.map((item)=>(
              <Col key={item.id} xs={12} sm={6} md={4} lg={3} xl={3}  className='d-flex flex-wrap m-4'>

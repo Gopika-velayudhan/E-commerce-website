@@ -95,8 +95,8 @@ const Navbar1 = () => {
 
             <Nav className="d-flex my-3 nav-left  fw-bold" navbarScroll>
               {login === false ? (
-                <Nav.Link className="text-black" onClick={() => navigate('/login')}>
-                    <FontAwesomeIcon icon={faUser}/>
+                <Nav.Link className="text-black mt-4" onClick={() => navigate('/login')}>
+                    <FontAwesomeIcon icon={faUser} />
                 </Nav.Link>
               ) : (
                 <>
@@ -112,11 +112,16 @@ const Navbar1 = () => {
               )}
               
             
-            <BsCartFill style={{ width: '1rem', height: '1rem', marginLeft: '1rem', cursor: 'pointer',marginTop:'1rem' }} onClick={carticon}/>
+              <Nav.Link className="text mt-3 mb-3" onClick={carticon}>
+                   < BsCartFill style={{marginTop:"10px"}}/>
+                </Nav.Link>
             
 
+                <Nav.Link className="text mt-3 mb-3" onClick={()=>navigate('/adminlogin')}>
+                   < MdAdminPanelSettings style={{marginTop:"10px"}}/>
+                </Nav.Link>
+
             
-            <MdAdminPanelSettings style={{ width: '1rem', height: '1rem', marginLeft: '1rem', cursor: 'pointer',marginTop:"1rem" }} onClick={() => navigate('/adminlogin')}  />
 
              </Nav>
           </Navbar.Collapse>

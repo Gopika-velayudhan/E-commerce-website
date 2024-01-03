@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Data } from '../MainRouter';
 import { useNavigate } from 'react-router-dom';
 import { Card,Button,Row,Col } from 'react-bootstrap';
-import Navbar1 from '../Navbar/Navbar1';
+import Navbar1 from '../Navbar/Navbar2';
 
 const Dtoy = () => {
     const navigate= useNavigate();
