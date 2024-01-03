@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Data } from '../Components/MainRouter';
 import { useNavigate } from 'react-router-dom';
 import { Button, Card } from 'react-bootstrap';
-import Navbar1 from '../Components/Navbar/Navbar1';
+import Navbar1 from '../Components/Navbar/Navbar2';
 
 const Search = () => {
     const {product,search} = useContext(Data);

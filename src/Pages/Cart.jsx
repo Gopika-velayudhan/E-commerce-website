@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { MDBCardBody, MDBCardImage, MDBCol, MDBContainer, MDBIcon, MDBRow, MDBTypography } from 'mdb-react-ui-kit';
 import { Button } from 'react-bootstrap';
-import Navbar1 from '../Components/Navbar/Navbar1';
+import Navbar1 from '../Components/Navbar/Navbar2';
 
 
 

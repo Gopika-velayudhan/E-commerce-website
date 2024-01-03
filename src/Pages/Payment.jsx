@@ -4,7 +4,7 @@ import { MDBBtn, MDBCard, MDBCardBody, MDBCol, MDBContainer, MDBInput, MDBRow } 
 import 'react-toastify/dist/ReactToastify.css';
 import {toast} from 'react-hot-toast';
 import { Data } from '../Components/MainRouter';
-import Navbar1 from '../Components/Navbar/Navbar1';
+import Navbar1 from '../Components/Navbar/Navbar2';
 
 const Payment = () => {
   const{buy}=useContext(Data)

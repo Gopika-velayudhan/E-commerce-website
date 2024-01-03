@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { Button, Card } from 'react-bootstrap';
 import 'react-toastify/dist/ReactToastify.css';
 import {toast} from 'react-hot-toast';
-import Navbar1 from '../Components/Navbar/Navbar1';
+import Navbar1 from '../Components/Navbar/Navbar2';
 
 const Viewproducts = () => {
   const navigate = useNavigate();
