@@ -12,8 +12,9 @@ const Login = ()=>{
   const user = useRef();
   const pass = useRef();
 
-  
-    
+  console.log(userData,"userdata  ")
+
+
   
   
 
@@ -23,25 +24,39 @@ const Login = ()=>{
     const password = pass.current.value;
 
     
+
+
+
+    
    
 
    const currentuser = userData.find((item)=>item.userName == username);
-   const currentpass = userData.find((item)=>item.password == password);
+   const currentpassword = userData.find((item)=>item.password == password);
+   
+
+
+   
+     
    
     
 
-    if(currentuser && currentpass){
+    if(currentuser && currentpassword ){
       setLogin(true);
       toast.success("Thank you for login");
       navigate('/');
-      setLoginUser(currentuser);
-      setLoginUser(currentpass)
+      setLoginUser(currentuser)
+      
+    
+
+    
+    
     }else{
       toast.error('user not found')
+      
     }
     
 
-    console.log(loginUser,'jh');
+    
   };
   
   

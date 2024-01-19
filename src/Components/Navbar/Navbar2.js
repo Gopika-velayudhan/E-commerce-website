@@ -11,7 +11,7 @@ import { CgProfile } from "react-icons/cg";
 import Logo3 from '../Assests/Logo3.jpeg';
 import { AiOutlineLogout } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {   faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons';
+import {   faUser } from '@fortawesome/free-solid-svg-icons';
 import { BsCartFill } from 'react-icons/bs';
  import { MdAdminPanelSettings } from 'react-icons/md';
 
@@ -22,14 +22,17 @@ import { BsCartFill } from 'react-icons/bs';
 
 const Navbar1 = () => {
   const navigate = useNavigate();
-  const { login, setLogin,setSearch,loginuser,setcart} = useContext(Data);
+  const { login, setLogin,setSearch,loginUser,setCart} = useContext(Data);
+
+  // console.log("gopz",loginuser)
 
   const logout = () => {
-    setcart([])
+    setCart([])
     setLogin(false);
     navigate('/');
     toast.error('You have logged out');
-    console.log(loginuser);
+    
+  
   };
 
   const carticon = () => {
@@ -66,12 +69,12 @@ const Navbar1 = () => {
              <Nav.Link onClick={()=>navigate('/shop')}>SHOP</Nav.Link>
              <NavDropdown title="Cat" id="responsive-nav">
               <NavDropdown.Item onClick={()=>navigate('/Cfood')}>Food</NavDropdown.Item>
-              <NavDropdown.Item onClick={()=>navigate('/Cass')}>TOys</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>navigate('/Cass')}>Toys</NavDropdown.Item>
               <NavDropdown.Item onClick={()=>navigate('/Ctoy')}>Accessories</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Dog" id="responsive-nav">
               <NavDropdown.Item onClick={()=>navigate('/Dfood')}>Food</NavDropdown.Item>
-              <NavDropdown.Item onClick={()=>navigate('/Dass')}>TOys</NavDropdown.Item>
+              <NavDropdown.Item onClick={()=>navigate('/Dass')}>Toys</NavDropdown.Item>
               <NavDropdown.Item onClick={()=>navigate('/Dtoy')}>Accessories</NavDropdown.Item>
               </NavDropdown>
 
@@ -100,7 +103,7 @@ const Navbar1 = () => {
                 </Nav.Link>
               ) : (
                 <>
-                  <Nav.Link className="text-success">{loginuser.userName}
+                  <Nav.Link className="text-success">{loginUser?.userName}
                     <CgProfile />
                  </Nav.Link>
                  <Nav.Link className="text-danger" onClick={logout}>

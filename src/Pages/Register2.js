@@ -50,7 +50,7 @@ setErrorMessage('');
 const newUser = {userName:username,emailId:emailId,phoneNumber:phoneNumber,password:password,confirmpassword:confirmpassword,cart:[]}
 setUserData([...userData,newUser]);
 navigate('/Login');
-console.log(newUser);
+
 };
 return(
   

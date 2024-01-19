@@ -39,22 +39,10 @@ import Users from "./Admin/Users";
 export const Data = createContext();
 
 function MainRouter() {
-    const[userData,setUserData] = useState([{
-        userName : "gopika",
-        emailId : 'gopikakv@gmail.com',
-        phoneNumber : 7736730305,
-        password : 11111111,
-        confirmpassword : 11111111,
-        cart : []
-        
-
-
-
-
-
-    }]);
+    const[userData,setUserData] = useState([]);
+      
     const[login,setLogin]=useState(false);
-    const [loginUser, setLoginUser] = useState([])
+    const [loginUser, setLoginUser] = useState({})
     const [product,setProduct] = useState(Product);
     const [cart,setCart] = useState([]);
     const [vieworder,setViewOrder] = useState([]);
